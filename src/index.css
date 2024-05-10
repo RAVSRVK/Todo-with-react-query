@@ -5,9 +5,117 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  background: #252525;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  padding: 1rem;
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  background: #333;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px;
+}
+
+h1 {
+  color: #47f5e7;
+  text-transform: uppercase;
+}
+
+.new-todo {
+  margin: 3.5rem;
+  display: flex;
+}
+
+.input-text {
+  width: 90%;
+  padding: 0.8em;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  width: 10%;
+  padding: 0.8em;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  background: #47f5e7;
+  color: #373535;
+}
+
+.input:focus,
+button {
+  font-size: 1em;
+  appearance: none;
+  color: #373535;
+  border: 1px solid #828691;
+}
+
+.add-btn {
+  border-left: none;
+}
+
+button:hover {
+  color: #252525;
+  background: #55b0fa;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0 3.5rem;
+}
+
+li {
+  padding: 0.85em;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  background: #494847;
+  letter-spacing: 0.02rem;
+  transition: all 0.3s ease-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label {
+  display: inline-block;
+  color: #fff;
+}
+
+.empty {
+  font-size: 20px;
+  font-weight: 400;
+  color: #cf972e;
+  letter-spacing: 0.2rem;
+}
+
+.error {
+  color: #de2323;
+  padding: 1rem;
+}
+
+.loader {
+  width: 50vh;
+  height: 50vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+}
+.checkbox {
+  margin-right: 10px;
+}
+
+.checkbox-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* width: 10%; */
 }
