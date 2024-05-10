@@ -6,7 +6,7 @@ import { TodosList } from "./components/todos-list";
 
 import { fetchTodos, deleteTodo, todoChecked } from "./api";
 
-const App = () => {
+export function App() {
   const queryClient = useQueryClient();
   const { status, data, error } = useQuery("todos", fetchTodos, {
     enabled: false,
@@ -53,6 +53,4 @@ const App = () => {
       />
     </div>
   );
-};
-
-export default App;
+}
