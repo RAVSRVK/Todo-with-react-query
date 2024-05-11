@@ -92,6 +92,7 @@ label {
   font-weight: 400;
   color: #cf972e;
   letter-spacing: 0.2rem;
+  text-align: center;
 }
 
 .error {

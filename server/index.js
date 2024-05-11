@@ -19,7 +19,6 @@ app.get("/todos", (req, res) => {
 
 app.post("/todos", (req, res) => {
   const todo = req.body;
-
   const newTodo = { id: uuidv4(), text: todo.text, isCompleted: todo.isCompleted };
   console.log(newTodo);
   todos.push(newTodo);
