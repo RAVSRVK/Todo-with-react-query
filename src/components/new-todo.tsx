@@ -10,7 +10,6 @@ export function NewTodo() {
 
   const { status, error, mutate } = useMutation(createTodo, {
     onSuccess: () => {
-      debugger;
       queryClient.invalidateQueries("todos");
       setTodo("");
     },
