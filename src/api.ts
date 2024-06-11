@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:8000";
+axios.defaults.baseURL = "https://f6njcq-8000.csb.app";
 
 export interface Todo {
   id: string;
@@ -18,10 +18,10 @@ export async function fetchTodos(): Promise<Todo[]> {
   }
 }
 
-export async function todoChecked(id: string) {  
+export async function todoChecked(id: string) {
   try {
-    await axios.patch(`/todos/${id}`)
-    return 
+    await axios.patch(`/todos/${id}`);
+    return;
   } catch (e) {
     console.log(e);
     throw e;
