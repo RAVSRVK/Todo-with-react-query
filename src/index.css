@@ -38,7 +38,7 @@ input:focus {
 }
 
 button {
-  width: 10%;
+  width: 150px;
   padding: 0.8em;
   cursor: pointer;
   font-weight: 700;

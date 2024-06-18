@@ -36,7 +36,7 @@ export function App() {
 
   return (
     <div onClick={handleOutsideClick} className="">
-      <h1>React Query Todo Example</h1>
+      <h1 style={{ textAlign: "center" }}>React Query Todo Example</h1>
 
       <NewTodo />
 
