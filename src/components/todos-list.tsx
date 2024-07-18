@@ -7,9 +7,9 @@ type TodosListProps = {
 };
 
 export function TodosList({ todos, onDelete, onUpdateTodo }: TodosListProps) {
-  if (todos && todos.length > 0) {
+  if (todos && todos?.length > 0) {
     return (
-      <ul>
+      <ul data-testid="ul">
         {todos.map((todo) => (
           <li key={todo.id}>
             <div className="checkbox-container">
@@ -30,7 +30,9 @@ export function TodosList({ todos, onDelete, onUpdateTodo }: TodosListProps) {
                 {todo.text}
               </label>
             </div>
-            <button onClick={() => onDelete(todo.id)}>Delete</button>
+            <button data-testid={todo.text} onClick={() => onDelete(todo.id)}>
+              Delete
+            </button>
           </li>
         ))}
       </ul>
