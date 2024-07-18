@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "https://todo-backend-1-emoq.onrender.com";
+axios.defaults.baseURL = "http://localhost:8000";
 
 export interface Todo {
   id: string;

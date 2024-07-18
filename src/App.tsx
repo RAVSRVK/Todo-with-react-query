@@ -15,6 +15,7 @@ export function App() {
       queryClient.invalidateQueries("todos");
     },
   });
+  console.log(data, error, status);
 
   const { mutate: updateTodo } = useMutation(todoChecked, {
     onSuccess: () => {
